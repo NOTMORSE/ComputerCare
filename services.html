@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .w3-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          }
+          
+          /* Add hover animation to the icon */
+          .w3-card:hover .w3-text-theme {
+            color: #ff0000; /* Change to your desired color */
+          }
+    </style>
+<title>Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="PRODUCT.html" class="w3-bar-item w3-button">Products</a>
+      </nav>
+
+
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h1>COMPUTER CARE</h1>
+  <h1 class="w3-xxxlarge w3-animate-bottom">SERVICES</h1>
+    <div class="w3-padding-32">
+        <a href="index.html" onclick="document.getElementById('id01').style.display='block'" target="_blank" class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;">LEARN MORE</a>
+    </div>
+  </div>
+</header>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Virus Removal</h3><br>
+        <i class="fa fa-bug w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Our professional service specializes in the thorough removal of malware and viruses from your computer. 
+          With our expertise, we will diligently scan your system, identify any malicious software or harmful code, and effectively eliminate them to restore the security and optimal performance of your computer. 
+          By employing advanced tools and techniques, we ensure that all traces of malware and viruses are eradicated, providing you with a clean and secure computing environment.</p>
+        <p>PHP 1,500</p>
+      </div>
+    </div>
+  
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Data Recovery</h3><br>
+        <i class="fa fa-database w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Our comprehensive data recovery service aims to retrieve and restore your valuable data from various storage devices, 
+          including hard drives, solid-state drives (SSDs), USB drives, and memory cards. Whether it's accidental deletion, formatting errors, system crashes, 
+          or physical damage to the storage media, our skilled technicians employ advanced techniques and specialized tools to recover your important files, documents, photos, videos, and more.</p>
+        <p>PHP 2,000</p>
+      </div>
+    </div>
+  
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Operating System Installation</h3><br>
+        <i class="fa fa-cogs w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Our comprehensive service covers the installation and setup of a new operating system on your computer, 
+          ensuring a seamless transition and optimal performance. Our experienced technicians will guide you through the process, 
+          assisting with the selection of the most suitable operating system for your needs, whether it's Windows, macOS, Linux, or another platform.</p>
+        <p>PHP 1,500</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Hardware Repair</h3><br>
+        <i class="fa fa-wrench w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Our reliable hardware repair service is dedicated to diagnosing and resolving issues with malfunctioning computer components, ensuring your system operates at its best. 
+            Our experienced technicians possess in-depth knowledge of various hardware components, including motherboards, processors, memory modules, hard drives, graphics cards, and more.</p>
+        <p>PHP 2,500</p>
+      </div>
+    </div>
+  
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Network Setup</h3><br>
+        <i class="fa fa-sitemap w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Our comprehensive networking service covers the setup and configuration of both wired and wireless networks, ensuring seamless connectivity and efficient data transmission. 
+            Our skilled technicians will assist you in designing and implementing a network infrastructure that suits your specific requirements and facilitates smooth communication and data sharing.</p>
+        <p>PHP 2,000</p>
+      </div>
+    </div>
+  
+    <div class="w3-third">
+      <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Computer Upgrades and Customization</h3><br>
+        <i class="fa fa-cubes w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Our specialized service focuses on the seamless integration of new components or the enhancement of existing ones, 
+            allowing us to customize your computer to meet your specific requirements. 
+            Whether you need to increase processing power, expand storage capacity, improve graphics capabilities, or optimize system performance, our experienced technicians will assess your needs and recommend the most suitable upgrades. </p>
+        <p>PHP 1,500</p>
+      </div>
+    </div>
+  </div>
+  
+  
+<script>
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "100%";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+</script>    

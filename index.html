@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script>
+        function sendMail() {
+          var name = document.getElementsByName("Name")[0].value;
+          var people = document.getElementsByName("People")[0].value;
+          var date = document.getElementsByName("date")[0].value;
+          var message = document.getElementsByName("Message")[0].value;
+          if (name == "" || people == "" || date == "" || message == "") {
+            alert("Please fill in all the required fields.");
+          } else {
+            alert("Mail sent successfully!");
+          }
+        }
+        </script>
+        <script>
+          var now = new Date();
+          var year = now.getFullYear();
+          var month = (now.getMonth() + 1).toString().padStart(2, '0');
+          var day = now.getDate().toString().padStart(2, '0');
+          var hour = now.getHours().toString().padStart(2, '0');
+          var minute = now.getMinutes().toString().padStart(2, '0');
+          var dateString = year + '-' + month + '-' + day + 'T' + hour + ':' + minute;
+          document.getElementById('dateInput').value = dateString;
+        </script>
+        <title>ComputerCare</title>
+        <link rel="stylesheet" href="FrontDesign.css">
+        <link rel="stylesheet" href="ICON.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <script src="https://kit.fontawesome.com/a5749f0a3e.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+      <div class="header">
+  <a href="services.html" style="margin-right: 20px; margin-left: 100px;">SERVICES</a>
+  <a href="PRODUCT.html" style="margin-right: 20px;">PRODUCTS</a>
+  <a href="about.html" style="margin-right: 20px;">ABOUT</a>
+  <div class="flex-center">
+    <a href="https://github.com/NOTMORSE/ComputerCare" target="_blank"><i class="fa fa-github fa-lg icon-3d"></i></a>
+    <a href="https://twitter.com/computercare_?t=59YxxoZblScjUHUR3G03sg&s=07" target="_blank"><i class="fa fa-twitter fa-lg icon-3d"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100092268296328&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook fa-lg icon-3d"></i></a>
+    <a href="https://www.instagram.com/computercareccommerce/?igshid=ZGUzMzM3NWJiOQ%3D%3D" target="_blank"><i class="fa fa-instagram fa-lg icon-3d"></i></a>
+  </div>
+</div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <div class="container">
+        <div class="top-section">
+          <div class="logo-wrapper">
+            <img src="LOGO2.png" class="logo">
+            <span class="editable">ComputerCare</span>
+          </div>
+        </div>
+        <div class="about">
+          <h1 class="w3-center w3-padding-48">
+            <span class="w3-tag w3-wide" style="font-size: 1vw;">ABOUT COMPUTER CARE</span></h1>
+        </div>
+        <div class="aboutdescript">
+          <p>ComputerCare is a computer system servicing company that offers comprehensive solutions to individuals and small and medium-sized businesses. 
+            Our mission is to provide expert care for computer systems and ensure the smooth operation of technology tools that are essential to our clients and our vision is to be the premier provider of expert and reliable computer system servicing, empowering businesses and individuals to achieve their full potential with technology. 
+            We offer a range of services, including hardware and software installation and maintenance, network setup and security, data backup and recovery, consultation, and training services. Our goal is to establish a reputation as a trusted partner in computer system servicing and grow a loyal customer base.</p>
+        </div>
+        <br><br><br>
+        <img src="PROPONENTS.jpg" style="width:70vh" >
+        <div class = "offer">
+          <br><br><br>
+          <h1 class="w3-center w3-padding-48"><span class="w3-tag w3-wide" style="font-size: 2vh;">WHAT WE OFFER</span></h1>
+        </div>
+        <br><br>
+        <table class = "table">
+            <thead>
+              <tr>
+                <th>Services</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Virus Removal</td>
+                <td>₱1,500</td>
+              </tr>
+              <tr>
+                <td>Data Recovery</td>
+                <td>₱2,000</td>
+              </tr>
+              <tr>
+                <td>Operating System Installation</td>
+                <td>₱1,500</td>
+              </tr>
+              <tr>
+                <td>Hardware Repair</td>
+                <td>₱2,500</td>
+              </tr>
+              <tr>
+                <td>Network Setup</td>
+                <td>₱2,000</td>
+              </tr>
+            </tbody>
+
+            <thead>
+              <tr>
+                <th>Products</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TUF Gaming Keyboard</td>
+                <td>₱4,500</td>
+              </tr>
+              <tr>
+                <td>Acer Mouse</td>
+                <td>₱700</td>
+              </tr>
+              <tr>
+                <td>SteelSeries Headset</td>
+                <td>₱6,000</td>
+              </tr>
+              <tr>
+                <td>Logitech Webcam</td>
+                <td>₱2,500</td>
+              </tr>
+              <tr>
+                <td>WD External Hard Drive</td>
+                <td>₱5,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="description">AND MANY MORE</p>
+          <br><br><br>
+          <div class="w3-container" id="where" style="padding-bottom:32px;">
+          </div>
+          <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:100vh">
+              <h1 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"style="font-size: 2vh;  margin-left: 2vw;">WHERE TO FIND US</span></h1>
+              <p style="font-size: 2vh;">HXWF+R5V, Numancia St, San Nicolas, Manila, Metro Manila</p>
+              <img src="REVIEW 2.jpg" class="w3-image" style="width: 100vw; height: 50vh;">
+
+              <p style="font-size: 2vh; text-align:justify"><span class="w3-tag">FYI!</span> If you're looking for reliable and efficient technology solutions, look no further than our computer services and products company. 
+                Our expert team of professionals is dedicated to providing top-notch hardware, software, and technical support to help you achieve your goals. 
+                From cutting-edge computer systems to comprehensive security solutions, we've got you covered. Trust us to provide the tools you need to succeed in today's fast-paced digital landscape.</p>
+              <p style="font-size: 15pt;"><strong>Reserve</strong> a time, ask for today's special or just send us a message:</p>
+              <form action="/action_page.php" target="_blank" autocomplete="off">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" id="dateInput"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-black w3-large" type="button" onclick="sendMail()">SEND MESSAGE</button></p>
+
+              </form>
+              
+            </div>
+      </div>
+      </div>
+      
+    </body>
+</html>
