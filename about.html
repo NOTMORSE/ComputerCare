@@ -52,6 +52,24 @@ body {
   .image-container:hover p {
     opacity: 1;
   }
+
+  video {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    margin-bottom: 100pt;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+  }
+  
+  video:hover {
+    filter: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
   
 </style>
 
@@ -185,6 +203,10 @@ body {
       </div>
   </div>
 
+  <video controls autoplay>
+    <source src="commercial.mp4" type="video/mp4">
+  </video>
+
 
   <img src="SCHOOL.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
@@ -217,13 +239,13 @@ body {
       setTimeout(carousel, 4000);    
     }
     function sendEmail(event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); 
         var name = document.querySelector('input[name="Name"]').value;
         var email = document.querySelector('input[name="Email"]').value;
         var message = document.querySelector('input[name="Message"]').value;
         
         if (name && email && message) {
-          // Perform email sending logic here
+          
           alert("Mail sent successfully!");
         } else {
           alert("Please fill out all fields before sending.");
